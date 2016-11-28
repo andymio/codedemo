@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CategorySuite">
+    <test name="CategoryTestCase" preserve-order="true">
+        <classes>
+            <class name="cn.alibabapictures.cloudgoods.CategoryTest">
+                <methods>
+                    <include name="categoryAddingTest" />
+                    <include name="categoryModifyTest" />
+                    <include name="categoryOplogTest" />
+                    <include name="categoryDeleteTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="6" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="44354" started-at="2016-11-23T11:24:56Z" finished-at="2016-11-23T11:25:40Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="44354" started-at="2016-11-23T11:24:56Z" finished-at="2016-11-23T11:25:40Z">
+      <class name="cn.alibabapictures.cloudgoods.TransferredTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:cn.alibabapictures.cloudgoods.TransferredTest@5700d6b1]" name="setUp" is-config="true" duration-ms="3571" started-at="2016-11-23T19:24:56Z" finished-at="2016-11-23T19:24:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="transferredAddingTest()[pri:1, instance:cn.alibabapictures.cloudgoods.TransferredTest@5700d6b1]" name="transferredAddingTest" duration-ms="17434" started-at="2016-11-23T19:24:59Z" finished-at="2016-11-23T19:25:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferredAddingTest -->
+        <test-method status="PASS" signature="transferredModifyTest()[pri:2, instance:cn.alibabapictures.cloudgoods.TransferredTest@5700d6b1]" name="transferredModifyTest" duration-ms="5728" started-at="2016-11-23T19:25:17Z" depends-on-methods="cn.alibabapictures.cloudgoods.TransferredTest.transferredAddingTest" finished-at="2016-11-23T19:25:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferredModifyTest -->
+        <test-method status="PASS" signature="transferredCopyTest()[pri:3, instance:cn.alibabapictures.cloudgoods.TransferredTest@5700d6b1]" name="transferredCopyTest" duration-ms="6219" started-at="2016-11-23T19:25:23Z" depends-on-methods="cn.alibabapictures.cloudgoods.TransferredTest.transferredAddingTest" finished-at="2016-11-23T19:25:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferredCopyTest -->
+        <test-method status="PASS" signature="transferredOplogTest()[pri:4, instance:cn.alibabapictures.cloudgoods.TransferredTest@5700d6b1]" name="transferredOplogTest" duration-ms="4072" started-at="2016-11-23T19:25:29Z" depends-on-methods="cn.alibabapictures.cloudgoods.TransferredTest.transferredAddingTest" finished-at="2016-11-23T19:25:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferredOplogTest -->
+        <test-method status="PASS" signature="transferredDiffConfigTest()[pri:5, instance:cn.alibabapictures.cloudgoods.TransferredTest@5700d6b1]" name="transferredDiffConfigTest" duration-ms="4087" started-at="2016-11-23T19:25:33Z" depends-on-methods="cn.alibabapictures.cloudgoods.TransferredTest.transferredAddingTest" finished-at="2016-11-23T19:25:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferredDiffConfigTest -->
+        <test-method status="FAIL" signature="transferredDeleteTest()[pri:6, instance:cn.alibabapictures.cloudgoods.TransferredTest@5700d6b1]" name="transferredDeleteTest" duration-ms="3203" started-at="2016-11-23T19:25:37Z" depends-on-methods="cn.alibabapictures.cloudgoods.TransferredTest.transferredAddingTest" finished-at="2016-11-23T19:25:40Z">
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
+            <message>
+              <![CDATA[Element is not visible
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Andy', ip: '10.254.254.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20160823121617, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0.2, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: e0463a51-0592-40af-b51c-76d8e4375b24]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not visible
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Andy', ip: '10.254.254.101', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20160823121617, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0.2, platformVersion=6.1, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: e0463a51-0592-40af-b51c-76d8e4375b24
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at cn.alibabapictures.cloudgoods.TransferredTest.transferredDeleteTest(TransferredTest.java:211)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferredDeleteTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:cn.alibabapictures.cloudgoods.TransferredTest@5700d6b1]" name="tearDown" is-config="true" duration-ms="8" started-at="2016-11-23T19:25:40Z" finished-at="2016-11-23T19:25:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- cn.alibabapictures.cloudgoods.TransferredTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
